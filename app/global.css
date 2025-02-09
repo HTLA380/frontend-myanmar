@@ -1,5 +1,19 @@
-@import 'tailwindcss';
-@import 'fumadocs-ui/css/neutral.css';
-@import 'fumadocs-ui/css/preset.css';
+@import "tailwindcss";
+@import "fumadocs-ui/css/neutral.css";
+@import "fumadocs-ui/css/preset.css";
 
 @source '../node_modules/fumadocs-ui/dist/**/*.js';
+
+:root {
+  --color-fd-background: hsl(0, 0%, 100%);
+  --color-fd-primary: hsl(216, 100%, 58%);
+}
+
+.dark {
+  --color-fd-background: hsl(240, 8%, 5%);
+  --color-fd-primary: hsl(216, 100%, 50%);
+}
+
+#nd-docs-layout aside#nd-sidebar {
+  @apply bg-fd-background;
+}

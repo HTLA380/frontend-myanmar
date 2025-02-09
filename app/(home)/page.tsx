@@ -1,18 +1,17 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function HomePage() {
   return (
-    <main className="flex flex-1 flex-col justify-center text-center">
-      <h1 className="mb-4 text-2xl font-bold">Hello World</h1>
+    <main className="flex gap-3 flex-1 flex-col justify-center text-center">
+      <h1 className="text-2xl font-bold">Frontend Myanmar</h1>
+      <p>Frontend Development နှင့်ဆိုင်သောအကြောင်းအရင်းများ</p>
+
       <p className="text-fd-muted-foreground">
-        You can open{' '}
-        <Link
-          href="/docs"
-          className="text-fd-foreground font-semibold underline"
-        >
+        အကြောင်းအရာများ ကိုလေ့လာရန်{" "}
+        <Link href="/docs" className="text-fd-foreground font-semibold underline">
           /docs
-        </Link>{' '}
-        and see the documentation.
+        </Link>{" "}
+        ကိုနိပ်ပါ။
       </p>
     </main>
   );
